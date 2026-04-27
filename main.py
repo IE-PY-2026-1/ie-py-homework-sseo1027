@@ -4,7 +4,7 @@
 print("=== 스마트 드라이빙 매니저 V1.0 ===")
 
 model = input("차량 이름을 입력하세요")
-fuel_eff = float(input("공인 연비(Km/L): "))
+eff = float(input("공인 연비(Km/L): "))
 mile = int(input("현재 주행거리(Km): "))
 price = 1650
 total_cost = 0
@@ -32,7 +32,7 @@ elif mile >= 10000 or eff < 8.0:
 else:
   print("판정: 차량 상태가 양호합니다.")
 
-print(f"최근 주행 기록: {trip}")
+print(f"최근 주행 기록: {trips}")
 print(f"이번 주행들로 지출된 예상 비용은 {total_cost}원 입니다.")
 print("안전운전하세요")
   
