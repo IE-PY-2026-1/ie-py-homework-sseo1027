@@ -19,7 +19,7 @@ def check(mile, eff):
     if mile >= 10000 or eff < 8.0: return "소모품 교체 권장"
     return "상태양호"
 
-def run()
+def run():
     trips = []
     model, eff, mile = get_info()
 
@@ -30,14 +30,14 @@ def run()
         if sel == '1':
             trips.append(float(input("주행거리(km): ")))
 
-          elif sel == '2':
+        elif sel == '2':
             dist = sum(trips)
             cost = calc(dist, eff)
             print(f"[{model}] 이번 비용:{cost}원 / 누적: {total}원 / 상태: {check(mile, eff)}")
 
-          elif sel == '3':
+        elif sel == '3':
             print("종료합니다.")
             break
 
 
-run()      
+run()
